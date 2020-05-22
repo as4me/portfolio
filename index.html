@@ -730,7 +730,7 @@
 
 					
 
-						<form action="https://send.pageclip.co/iCpDSgsnCI3JmUFimEeV7O9NLDUf8QnA/as4me" class="pageclip-form "
+						<form action="https://send.pageclip.co/iCpDSgsnCI3JmUFimEeV7O9NLDUf8QnA/as4me" class="pageclip-form"
 							method="post">
 							<div class="messages"></div>
 
@@ -781,7 +781,14 @@
 							</button>
 						</form>
 
-
+						<script>
+							var form = document.querySelector('.pageclip-form')
+							Pageclip.form(form, {
+							onSubmit: function (event) { },
+							onResponse: function (error, response) { },
+							successTemplate: '<span>Thank you!</span>'
+							})
+						</script>
 					</div>
 
 				</div>
