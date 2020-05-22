@@ -720,6 +720,12 @@
 					</div>
 
 					<div class="col-md-8">
+
+
+
+
+
+
 						<!-- Contact Form -->
 						<form id="contact-form" class="contact-form mt-6" method="post" action="https://send.pageclip.co/iCpDSgsnCI3JmUFimEeV7O9NLDUf8QnA/as4me" className='pageclip-form'>
 
@@ -748,7 +754,7 @@
 								<div class="column col-md-12">
 									<!-- Email input -->
 									<div class="form-group">
-										<input type="text" class="form-control" id="InputSubject" name="Subject"
+										<input type="text" class="form-control" id="InputSubject" name="sub"
 											placeholder="Subject" required="required" data-error="Subject is required.">
 										<div class="help-block with-errors"></div>
 									</div>
@@ -765,13 +771,38 @@
 								</div>
 							</div>
 
-							<button class="pageclip-form__submit" type="button">
-								<span>Submit</span>
-							  </button>
+							<button type="submit" name="submit" id="submit" value="Submit" class="btn btn-default">Send
+								Message</button><!-- Send Button -->
+							
+							</button>
 
 						</form>
 						
+						<form action="https://send.pageclip.co/iCpDSgsnCI3JmUFimEeV7O9NLDUf8QnA" class="pageclip-form" method="post">
+							<div class="messages"></div>
+
+							<div class="row">
+								<div class="column col-md-6">
+									<!-- Name input -->
+									<!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
+									
+									<!-- Name input -->
+									<div class="form-group">
+										<input type="text" class="form-control" name="name" id="name"
+											placeholder="Your name" required="required" data-error="Name is required.">
+											<input type="text" name="name" value="Roscoe Jones" class="form-control" />
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div>
 							
+							<input type="email" name="email" value="roscoe@example.com" />
+						  
+							<!-- This button will have a loading spinner. Keep the inner span for best results. -->
+							<button type="submit" class="pageclip-form__submit">
+							  <span>Send</span>
+							</button>
+						  </form>
 						
 
 					</div>
