@@ -1,1 +1,1 @@
-https://as4me.github.io/portfolio/
+portfolio.github.io
